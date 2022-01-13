@@ -9,7 +9,7 @@ from google.oauth2 import service_account
 # | GLOBAL VARAIBLES AND GLOBAL EXECUTIONS
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
-SERVICE_ACCOUNT_FILE = "ggsheet\\keys.json"
+SERVICE_ACCOUNT_FILE = os.path.join("ggsheet", "keys.json")
 SERVICE_ACCOUNT_FILE = os.path.join(os.path.split(os.path.abspath(sys.argv[0]))[0], SERVICE_ACCOUNT_FILE)
 
 CREDS = None
@@ -52,7 +52,7 @@ def sheet_read(range: str) -> List[List[str]]:
     values = result.get("values", [])
     return values
 
-def sheet_write(range: str, data: List[List[str]], input_mode: str = "USER_ENTERED") -> Dict[str, Union[str, int]]:
+def sheet_write(range: str, data: List[List[str]], input_mode: str = "RAW") -> Dict[str, Union[str, int]]:
     """
     write data to GGSheet (SPREADSHEET_ID) at range and input_mode provide
 
