@@ -1,0 +1,4 @@
+1. https://www.youtube.com/watch?v=4ssigWmExak # google sheet api with python
+2. https://discordpy.readthedocs.io/en/stable/api.html # discord.py api
+3. https://discord.com/developers/applications # discord application (create bots)
+4. https://discord.com/api/oauth2/authorize?client_id=930446082452881438&permissions=532844899440&scope=bot # for invite Q Bot
