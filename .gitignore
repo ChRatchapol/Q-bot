@@ -130,3 +130,6 @@ dmypy.json
 
 # Google Sheet
 ggsheet/keys.json
+
+# Q Bot Queue File
+*.q
