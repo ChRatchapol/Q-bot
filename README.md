@@ -23,23 +23,23 @@ This discord bot is using [Python](https://www.python.org/) and [discord.py](htt
 4. Go to **OAuth2** tab and **URL Generator** tab.
 5. Check **bot** in **scope**.
 6. Check following permissions. **(Your permission should be 532844899440 in the URL.)**
-6.1 Manage Server
-6.2 Manage Roles
-6.3 Manage Channels
-6.4 Read Messages/View Channels
-6.5 Send Messages
-6.6 Create Public Threads
-6.7 Create Private Threads
-6.8 Send Messages in Threads
-6.9 Manage Messages
-6.10 Manages Threads
-6.11 Embed Links
-6.12 Attach Files
-6.13 Read Messages History
-6.14 Mention Everyone
-6.15 Use External Emojis
-6.16 Use External Stickers
-6.17 Add Reactions
+    * Manage Server
+    * Manage Roles
+    * Manage Channels
+    * Read Messages/View Channels
+    * Send Messages
+    * Create Public Threads
+    * Create Private Threads
+    * Send Messages in Threads
+    * Manage Messages
+    * Manages Threads
+    * Embed Links
+    * Attach Files
+    * Read Messages History
+    * Mention Everyone
+    * Use External Emojis
+    * Use External Stickers
+    * Add Reactions
 7. Copy the URL at the bottom of the page.
 8. Open it in new tab and authorize your bot to enter your server. (Create empty server to test it first if you're unsure.)
 9. Go back to [Discord Developer Portal](https://discord.com/developers/applications) page and go to **Bot**  tab.
