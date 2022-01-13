@@ -46,6 +46,19 @@ This discord bot is using [Python](https://www.python.org/) and [discord.py](htt
 10. Copy your bot's **Token** for [.env](#env-file) file. **This is (likely) your bot's password. Do not expose it to the public.** (below your bot's username)
 
 ### Setup Google Cloud Platform
+1. Go to [Google Developer Console](https://console.cloud.google.com/apis/dashboard) and login with your account.
+2. Create new project.
+3. Enter your project name. (maybe as same as the bot) You can fill everything else as you please. Then click **Create**.
+4. Make sure you activate it by clicking it on notification once it done loading. (Or you could open it from drop down menu up top.)
+5. On the top left of the page, you should see the menu icon (3 horizontal lines or hamburger if you like the name). Click it and go to **APIs & Services** then click on "**+ ENABLE APIS AND SERVICES**" up top.
+6. Search for **sheet** and then **Google Sheet API** should show up. Click it and enable it.
+7. Go to the hamburger menu then go to **IAM & Admin** tab. Go to **Service Accounts** tab on the left and click "**+ CREATE SERVICE ACCOUNT**".
+8. Enter service account name (maybe as same as the bot) and click create. (You can fill everything else if you want.)
+9. Set a role of the service account from drop down menu to be **Editor** then click **CONTINUE** and **DONE**.
+10. You should be back at **Service Account** page and it should has the service account you just create. Copy it's email.
+11. Go to Google Sheet you want the bot to access then share it with email you just copied. (You should check that you've shared it with **editor** permission.)
+12. Go back to [Google Developer Console](https://console.cloud.google.com/apis/dashboard). On the **Service Accounts** tab in **IAM & Admin** click on email you just copy. It should bring you to service account details page.
+13. At the bottom of the page, click on **ADD KEY** drop down menu and choose **Create new key**. Choose **JSON** and click **CREATE**. This should download the key file to your computer, place it in the **ggsheet** folder with "**keys.json**" name. (**This key is like the discord bot's token, it should not be expose to the public.**)
 
 ## .env file
 create .env file and add following content to the file
@@ -58,8 +71,8 @@ QUEUE_FILE_NAME=[your queue file name]
 SPREADSHEET_ID=[your spreadsheet id]
 ```
 
-## keys.json
-create key for your Google Service Account and place the file in ggsheet folder (also rename it to keys.json)
+For `DISCORD_BOT_TOKEN`, you should look at [Setup Discord Bot](#setup-discord-bot).
+For `SPREADSHEET_ID`, it is on the URL of the spreadsheet. (after ...d/ and before /edit...) 
 
 ### Reference
 [ref](./REF.md)
