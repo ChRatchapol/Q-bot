@@ -1,5 +1,4 @@
-# Reference (not final)
+# Reference
 - [google sheet api with python](https://www.youtube.com/watch?v=4ssigWmExak)
 - [discord.py api](https://discordpy.readthedocs.io/en/stable/api.html)
-- [discord applications (create bots)](https://discord.com/developers/applications)
-- [for invite Q Bot](https://discord.com/api/oauth2/authorize?client_id=930446082452881438&permissions=532844899440&scope=bot)
+- [discord applications](https://discord.com/developers/applications)
