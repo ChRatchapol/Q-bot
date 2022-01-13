@@ -60,7 +60,7 @@ This discord bot uses [Python](https://www.python.org/) and [discord.py](https:/
 12. Go back to [Google Developer Console](https://console.cloud.google.com/apis/dashboard). On the **Service Accounts** tab in **IAM & Admin**, click on the email you copied. It should bring you to the service account details page.
 13. At the bottom of the page, click on the **ADD KEY** drop-down menu and choose **Create new key**. Choose **JSON** and click **CREATE**. It should start downloading the key file to your computer, place it in the **ggsheet** folder with the "**keys.json**" name. (**This key is like the discord bot's token. It should not expose to the public.**)
 
-## .env file
+### .env file
 Create a .env file and add the following content to the file.
 ```
 ADMIN_ROLE=TA
@@ -74,6 +74,26 @@ SPREADSHEET_ID=[your spreadsheet id]
 For `DISCORD_BOT_TOKEN`, you should look at [Setup Discord Bot](#setup-discord-bot).
 
 For `SPREADSHEET_ID`, it is on the URL of the spreadsheet. (after ...d/ and before /edit...) 
+
+### Google Sheet
+You can use any google sheet (that you already shared to the google service account) but, the sheet name must be "**Queue**".
+
+## Usage
+Once, The bot is in the discord server. You can run the code by running `main.py` (not `main.py` in the ggsheet folder) by typing `py main.py`. (make sure that you use the correct version of python)
+
+The bot should start working. It will scan through all servers that it can access and create **TA** role, **Q Bot** category and, all text channels needed. (If you already have role, category or text channels, it won't do anything.)
+
+After that, the bot is ready to go. You can use the following commands.
+**I strongly recommend you to use `$help` first.**
+
+|command                            |description                                   |
+|-----------------------------------|----------------------------------------------|
+|$add "[group name]" "[topic]"**\***|add group name and topic to the queue         |
+|$remove "[group name]"**\***       |remove group name and its topic from the queue|
+|$list                              |list all queue                                |
+|$next                              |pop item from the queue                       |
+|$help                              |show help message                             |
+**\*** Double-quotes (") is needed.
 
 ### Reference
 [ref](./REF.md)
